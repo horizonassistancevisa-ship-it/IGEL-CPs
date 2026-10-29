@@ -33,7 +33,7 @@
     .hero-actions{display:flex;flex-wrap:wrap;gap:12px}.hero .btn-outline{background:#fff;border-color:#bdeaff;color:var(--navy)}
     .trustline{display:flex;gap:18px;flex-wrap:wrap;margin-top:27px;color:#45647d;font-size:.85rem}.trustline span:before{content:"✓";color:var(--gold);font-weight:900;margin-right:7px}
     .hero-card{background:#fff;color:var(--ink);border:1px solid #ffffff35;border-radius:22px;padding:27px;box-shadow:0 24px 70px #0003;max-width:390px;justify-self:end}
-    .hero-card .card-top{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:18px}
+    .hero-illustration{display:block;width:100%;height:auto;max-height:190px;margin:0 auto 18px}.hero-card .card-top{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:18px}
     .badge{background:#dff4ff;color:#123c63;border-radius:99px;padding:6px 10px;font-size:.73rem;font-weight:800}
     .hero-card h2{font-size:1.35rem;line-height:1.25;margin:0 0 9px;color:var(--navy)}
     .hero-card p{font-size:.92rem;color:var(--muted);margin:0 0 19px}
@@ -90,6 +90,16 @@
           <div class="trustline"><span>Informations compréhensibles</span><span>Accompagnement organisé</span><span>Tarifs annoncés à l'avance</span></div>
         </div>
         <aside class="hero-card" aria-label="Aperçu des services">
+          <svg class="hero-illustration" viewBox="0 0 360 190" role="img" aria-label="Illustration de voyage avec globe, passeport et avion" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaf8ff"/><stop offset="1" stop-color="#c6eaff"/></linearGradient><linearGradient id="book" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1684b8"/><stop offset="1" stop-color="#075078"/></linearGradient></defs>
+            <rect x="5" y="5" width="350" height="180" rx="22" fill="url(#sky)"/>
+            <circle cx="246" cy="76" r="55" fill="#fff" opacity=".7"/><circle cx="246" cy="76" r="42" fill="#79c8e9"/>
+            <ellipse cx="246" cy="76" rx="20" ry="42" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M205 76h82M212 56h68M212 96h68" fill="none" stroke="#fff" stroke-width="2.5"/>
+            <path d="M195 36Q245 8 292 42" fill="none" stroke="#f3b84c" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 7"/>
+            <g transform="translate(43 35) rotate(-8 58 70)"><rect x="0" y="0" width="112" height="132" rx="10" fill="#fff" opacity=".55"/><rect x="7" y="7" width="98" height="118" rx="8" fill="url(#book)"/><path d="M17 18h78" stroke="#8ed8f4" stroke-width="2"/><circle cx="56" cy="57" r="19" fill="none" stroke="#f6d58d" stroke-width="2.5"/><path d="M37 57h38M56 38c-11 10-11 28 0 38M56 38c11 10 11 28 0 38" fill="none" stroke="#f6d58d" stroke-width="1.8"/><text x="56" y="91" font-size="9" font-family="Arial,sans-serif" font-weight="700" text-anchor="middle" fill="#fff">PASSEPORT</text><path d="M27 105h58" stroke="#8ed8f4" stroke-width="2"/></g>
+            <g transform="translate(220 119) rotate(-12)"><path d="M0 14L49 0 39 15 60 26 56 32 31 24 19 40 12 38 18 21 0 14Z" fill="#f0b63f" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></g>
+            <circle cx="315" cy="142" r="5" fill="#f0b63f"/><circle cx="185" cy="144" r="3" fill="#1684b8"/>
+          </svg>
           <div class="card-top"><span class="badge">L'essentiel, étape par étape</span><span style="color:#b18a3d;font-weight:900">HAV</span></div>
           <h2>Un projet à l'étranger commence par une bonne préparation.</h2>
           <p>Nous vous aidons à comprendre les démarches et à préparer votre dossier sans promesse irréaliste.</p>
