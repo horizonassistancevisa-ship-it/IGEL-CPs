@@ -1,179 +1,282 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Horizon Visa Assistance : informations, accompagnement à la préparation de dossiers et guides pratiques pour vos démarches à l'étranger.">
-  <meta name="theme-color" content="#123c63">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Horizon Visa Assistance">
-  <meta property="og:description" content="Préparez vos démarches à l'étranger avec plus de clarté.">
-  <title>Horizon Visa Assistance | Accueil</title>
-  <style>
-    :root{--bleu:#123c63;--bleu2:#1686c9;--bleu-clair:#eaf7ff;--fond:#f6fbff;--texte:#1d2939;--gris:#64748b;--trait:#dceaf3;--vert:#16845b;--blanc:#fff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--texte);line-height:1.6;background:#fff}
-    a{color:inherit;text-decoration:none}.conteneur{width:min(1140px,calc(100% - 36px));margin:auto}
-    .bandeau{background:var(--bleu);color:#eaf7ff;font-size:13px;padding:8px 0}.bandeau .conteneur{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    header{position:sticky;top:0;z-index:20;background:#ffffffef;backdrop-filter:blur(12px);border-bottom:1px solid var(--trait)}
-    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .marque{display:flex;align-items:center;gap:11px;font-weight:900;color:var(--bleu);letter-spacing:-.4px}.logo{height:45px;width:45px;border-radius:14px;background:var(--bleu);color:white;display:grid;place-items:center;font-weight:900;font-size:13px;box-shadow:0 7px 18px #123c6328}.marque small{display:block;color:var(--gris);font-size:10px;letter-spacing:2px}
-    .liens{display:flex;align-items:center;gap:22px;font-size:14px;font-weight:700}.liens a:hover{color:var(--bleu2)}
-    .bouton{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:10px;padding:12px 18px;background:var(--bleu2);color:white;font-weight:800;font-size:14px;cursor:pointer;transition:.2s}.bouton:hover{background:#086ba8;transform:translateY(-1px)}.bouton-secondaire{background:white;color:var(--bleu);border:1px solid #b9d9eb}.bouton-secondaire:hover{background:var(--bleu-clair);color:var(--bleu)}
-    .hero{background:radial-gradient(circle at 85% 15%,#fff 0,transparent 32%),linear-gradient(125deg,#f4fbff,#dff3ff);padding:76px 0 82px}.hero-grille{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}.surtitre{color:var(--bleu2);font-weight:900;text-transform:uppercase;letter-spacing:2px;font-size:12px}.hero h1{font-size:clamp(38px,5vw,62px);line-height:1.07;letter-spacing:-2px;color:var(--bleu);margin:17px 0}.hero h1 span{color:var(--bleu2)}.hero p{font-size:17px;color:#52677a;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.preuves{display:flex;gap:18px;flex-wrap:wrap;margin-top:24px;color:#52677a;font-size:13px}.preuves span:before{content:"✓";color:var(--vert);font-weight:900;margin-right:7px}
-    .carte-hero{background:white;border:1px solid #dceaf3;border-radius:22px;padding:28px;box-shadow:0 22px 60px #123c6316}.illustration{height:165px;border-radius:16px;background:linear-gradient(135deg,#dff3ff,#f4fbff);display:grid;place-items:center;font-size:75px;margin-bottom:20px}.carte-hero h2{color:var(--bleu);font-size:22px;line-height:1.25;margin:0 0 8px}.carte-hero p{font-size:14px;margin:0;color:var(--gris)}.ligne-hero{display:flex;gap:12px;padding:13px 0;border-top:1px solid var(--trait);margin-top:13px}.numero{height:35px;width:35px;flex:0 0 35px;border-radius:10px;background:var(--bleu-clair);color:var(--bleu2);display:grid;place-items:center;font-weight:900}
-    section{padding:76px 0}.section-titre{text-align:center;max-width:720px;margin:0 auto 38px}.section-titre small{color:var(--bleu2);font-weight:900;letter-spacing:2px;text-transform:uppercase}.section-titre h2{font-size:clamp(28px,3.4vw,40px);line-height:1.15;letter-spacing:-1px;color:var(--bleu);margin:10px 0}.section-titre p{color:var(--gris);margin:0}
-    .bande-demarrage{padding:30px 0}.demarrage{display:flex;align-items:center;justify-content:space-between;gap:25px;border:1px solid #c9e5f5;background:var(--fond);border-radius:18px;padding:25px 28px}.demarrage h2{font-size:21px;color:var(--bleu);margin:0 0 5px}.demarrage p{color:var(--gris);margin:0}
-    .fond-clair{background:var(--fond)}.grille-services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:white;border:1px solid var(--trait);border-radius:16px;padding:24px}.icone{height:48px;width:48px;border-radius:14px;background:var(--bleu-clair);display:grid;place-items:center;font-size:23px;margin-bottom:15px}.service h3{color:var(--bleu);margin:0 0 8px;font-size:18px}.service p{color:var(--gris);font-size:14px;margin:0 0 15px}.lien-texte{color:var(--bleu2);font-weight:800;font-size:14px}
-    .fonctionnement{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}.panneau{background:var(--bleu);color:white;border-radius:20px;padding:30px}.panneau h2{font-size:29px;line-height:1.15;margin:12px 0}.panneau p{color:#d2e6f4}.etapes{display:grid;gap:20px}.etape{display:grid;grid-template-columns:43px 1fr;gap:14px}.etape-n{height:42px;width:42px;border-radius:50%;background:var(--bleu-clair);color:var(--bleu2);display:grid;place-items:center;font-weight:900}.etape h3{margin:0;color:var(--bleu);font-size:17px}.etape p{margin:3px 0 0;color:var(--gris);font-size:14px}
-    .grille-guides{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.guide{background:white;border:1px solid var(--trait);border-radius:17px;padding:22px;display:flex;flex-direction:column;min-height:265px}.guide-entete{display:flex;align-items:center;justify-content:space-between;gap:8px}.guide-icone{font-size:28px}.etat{background:#e8f7ef;color:#147448;border-radius:30px;padding:5px 10px;font-size:11px;font-weight:900}.guide h3{color:var(--bleu);font-size:18px;line-height:1.3;margin:14px 0 8px}.guide p{color:var(--gris);font-size:13px;margin:0 0 15px}.prix{font-weight:900;color:var(--bleu);font-size:21px;margin-top:auto;padding-top:12px}.guide .bouton{width:100%;margin-top:12px}.note-guide{text-align:center;color:var(--gris);font-size:13px;margin-top:22px}
-    .paiement-grille{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.paiement-etape{border:1px solid var(--trait);border-radius:16px;padding:22px}.paiement-etape h3{color:var(--bleu);margin:10px 0 5px}.paiement-etape p{color:var(--gris);font-size:14px;margin:0}.avertissement{margin-top:22px;padding:16px 18px;border-left:4px solid #e5a52b;background:#fff8e9;border-radius:8px;color:#73551a;font-size:14px}
-    .engagements{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.engagement{border-top:3px solid var(--bleu2);padding:18px 0}.engagement h3{color:var(--bleu);font-size:17px;margin:0 0 7px}.engagement p{color:var(--gris);font-size:14px;margin:0}
-    .faq{max-width:820px;margin:auto}.faq details{border-bottom:1px solid var(--trait);padding:17px 0}.faq summary{font-weight:800;color:var(--bleu);cursor:pointer}.faq details p{color:var(--gris);font-size:14px;margin:10px 0 0}
-    .appel{background:linear-gradient(120deg,#dff3ff,#f4fbff);padding:52px 0}.appel-interieur{display:flex;justify-content:space-between;align-items:center;gap:25px}.appel h2{font-size:clamp(27px,3vw,38px);line-height:1.15;color:var(--bleu);margin:0 0 8px}.appel p{margin:0;color:var(--gris)}
-    footer{background:#0d2f4e;color:#d5e6f2;padding:42px 0 20px}.pied-grille{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:30px}.pied-grille h3{color:white;font-size:15px}.pied-grille p,.pied-grille a{font-size:13px;color:#c2d7e6}.pied-liens{display:grid;gap:8px}.bas-pied{border-top:1px solid #ffffff30;margin-top:28px;padding-top:17px;font-size:12px;color:#a9c5da}
-    .whatsapp-fixe{position:fixed;right:18px;bottom:18px;z-index:30;background:var(--vert);color:white;border-radius:40px;padding:13px 17px;font-weight:900;box-shadow:0 8px 25px #0003}
-    @media(max-width:850px){.hero-grille,.fonctionnement{grid-template-columns:1fr}.grille-services,.grille-guides,.paiement-grille,.engagements{grid-template-columns:repeat(2,1fr)}.pied-grille{grid-template-columns:1fr 1fr}.liens{gap:12px}}
-    @media(max-width:620px){.conteneur{width:calc(100% - 28px)}.bandeau .conteneur{justify-content:center;text-align:center}.liens a:not(.bouton){display:none}nav{min-height:68px}.hero{padding:52px 0}.hero h1{font-size:42px}.hero p{font-size:15px}.actions .bouton{width:100%}.demarrage,.appel-interieur{align-items:flex-start;flex-direction:column}.grille-services,.grille-guides,.paiement-grille,.engagements,.pied-grille{grid-template-columns:1fr}section{padding:58px 0}.carte-hero{padding:20px}.whatsapp-fixe{right:10px;bottom:10px}.guide{min-height:0}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Horizon Visa Assistance accompagne vos démarches de visa, de mobilité internationale et de préparation de dossiers depuis le Sénégal.">
+<meta name="theme-color" content="#102b55">
+<meta property="og:title" content="Horizon Visa Assistance | Votre projet à l’international">
+<meta property="og:description" content="Guides PDF, préparation de dossier et conseils personnalisés pour vos démarches de visa.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80">
+<title>Horizon Visa Assistance | Votre projet à l’international</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#102b55;--blue:#1769aa;--sky:#eaf4fc;--green:#16a36a;--green-d:#0f8556;--ink:#18304b;--muted:#5a6d82;--line:#e3ebf3;--shadow:0 18px 45px rgba(16,43,85,.12)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font-family:"Plus Jakarta Sans",Inter,Arial,sans-serif;color:var(--ink);line-height:1.65;background:#fff;-webkit-text-size-adjust:100%}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+:focus-visible{outline:3px solid #f5b83d;outline-offset:3px;border-radius:6px}
+.wrap{width:min(1160px,92%);margin:auto}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--navy);padding:10px 14px;border-radius:8px;z-index:99}
+.skip:focus{left:8px}
+
+/* En-tête */
+header{position:sticky;top:0;z-index:30;background:#fffffff2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--navy);line-height:1.2}
+.logo{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,var(--navy),var(--blue));display:grid;place-items:center;color:#fff;font-size:20px;font-weight:800}
+.brand small{display:block;font-size:10px;letter-spacing:2.2px;color:var(--muted);font-weight:700}
+.links{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:600}
+.links a{padding:6px 0;border-bottom:2px solid transparent}
+.links a:hover{color:var(--blue);border-color:var(--blue)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;font-size:22px;color:var(--navy);cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:12px;font:700 15px/1.2 inherit;border:0;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 8px 20px rgba(22,163,106,.28)}
+.btn-green:hover{background:var(--green-d)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-light{background:#fff;color:var(--navy);border:1px solid var(--line)}
+
+/* Accueil */
+.hero{padding:56px 0 72px;background:linear-gradient(120deg,#f3f8fd 0%,#eaf4fc 54%,#fff 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--blue);font-size:13px;font-weight:700}
+.eyebrow:before{content:"";width:24px;height:2px;background:var(--green)}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.1;letter-spacing:-1.6px;color:var(--navy);margin:18px 0}
+.hero p{font-size:17px;color:var(--muted);max-width:540px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.trust{display:flex;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:13px;font-weight:600}
+.trust span:before{content:"✓";color:var(--green);font-weight:800;margin-right:7px}
+.hero-photo{position:relative;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(135deg,#1d4f8c,#102b55);aspect-ratio:6/5}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-note{position:absolute;left:20px;bottom:20px;right:20px;max-width:310px;background:#fff;padding:15px 18px;border-radius:14px;box-shadow:var(--shadow);font-size:14px;font-weight:700;color:var(--navy)}
+.photo-note small{display:block;color:var(--muted);font-weight:500;margin-top:2px}
+
+/* Bandeau chiffres */
+.stats{background:var(--navy);color:#fff;padding:26px 0}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.stats strong{display:block;font-size:26px;letter-spacing:-.5px}
+.stats span{font-size:13px;color:#c5d6ea}
+
+/* Sections */
+section{padding:80px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 42px}
+.section-head h2{font-size:clamp(26px,3.5vw,38px);line-height:1.2;color:var(--navy);margin:12px 0;letter-spacing:-.6px}
+.section-head p{color:var(--muted);margin:0}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;transition:transform .2s,box-shadow .2s}
+.service:hover,.guide:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.service-img{position:relative;height:160px;background:linear-gradient(135deg,var(--blue),var(--navy))}
+.service-img img{width:100%;height:100%;object-fit:cover;display:block}
+.service-img:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,43,85,0) 40%,rgba(16,43,85,.45))}
+.service-icon{position:absolute;left:20px;bottom:-24px;z-index:2;width:54px;height:54px;border-radius:16px;background:#fff;display:grid;place-items:center;color:var(--blue);box-shadow:0 8px 20px rgba(16,43,85,.2);border:1px solid var(--line)}
+.service-icon svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.service-body{padding:38px 24px 26px}
+.service h3{color:var(--navy);margin:0 0 6px;font-size:18px}
+.service p{color:var(--muted);font-size:14.5px;margin:0}
+
+/* Guides */
+.guides{background:#f5f9fd}
+.guide-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.guide{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.guide-img{position:relative;height:150px;background:linear-gradient(135deg,var(--blue),var(--navy))}
+.guide-img img{width:100%;height:100%;object-fit:cover;display:block}
+.flag{position:absolute;left:12px;top:12px;background:#fff;border-radius:30px;padding:4px 11px;font-size:13px;font-weight:700;color:var(--navy);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.guide-body{padding:18px;display:flex;flex-direction:column;flex:1}
+.guide h3{font-size:16px;color:var(--navy);margin:0 0 6px}
+.guide p{font-size:13.5px;color:var(--muted);margin:0 0 16px;flex:1}
+.guide-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.price{font-weight:800;color:var(--navy)}
+.status{font-size:11px;font-weight:700;color:#8a5a0b;background:#fff1cf;padding:5px 10px;border-radius:30px}
+.status.ok{color:#0b6b43;background:#dcf5ea}
+.guide-warning{margin:28px auto 0;padding:16px 20px;border-left:4px solid #e4aa39;background:#fff9e9;color:#6b4d1a;border-radius:10px;font-size:14px;max-width:860px}
+
+/* Étapes */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;position:relative}
+.step{text-align:center;padding:22px}
+.step-num{margin:auto;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:800;font-size:21px;box-shadow:0 0 0 8px var(--sky)}
+.step h3{color:var(--navy);margin:18px 0 6px}
+.step p{font-size:14.5px;color:var(--muted);margin:0}
+
+/* Engagement */
+.promise{background:var(--navy);color:#fff}
+.promise-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.promise h2{font-size:clamp(26px,3.4vw,36px);line-height:1.2;margin:12px 0}
+.promise p{color:#d5e2f1}
+.promise .eyebrow{color:#9ed6ff}
+.promise-list{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.promise-item{background:#ffffff12;border:1px solid #ffffff26;border-radius:16px;padding:20px}
+.promise-item strong{display:block;margin-bottom:5px}
+.promise-item span{font-size:14px;color:#d5e2f1}
+
+/* FAQ */
+.faq{max-width:820px;margin:auto}
+.faq details{padding:20px 0;border-bottom:1px solid var(--line)}
+.faq summary{font-weight:700;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";font-size:22px;line-height:1;color:var(--blue)}
+.faq details[open] summary:after{content:"–"}
+.faq p{color:var(--muted);font-size:15px;margin:12px 0 0}
+
+/* Appel à l'action */
+.cta{padding:60px 0;background:var(--sky)}
+.cta-box{display:flex;align-items:center;justify-content:space-between;gap:26px}
+.cta h2{color:var(--navy);font-size:30px;margin:0 0 7px}
+.cta p{color:var(--muted);margin:0}
+
+/* Pied de page */
+footer{background:#0b2040;color:#d5e2f1;padding:44px 0 30px}
+.footer-row{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+.footer-brand{color:#fff;font-weight:800;font-size:17px}
+footer h4{color:#fff;margin:0 0 10px;font-size:14px}
+footer a:hover{color:#fff;text-decoration:underline}
+footer ul{list-style:none;margin:0;padding:0;font-size:14px;line-height:2}
+.footer-small{font-size:13px;color:#aebfd2;margin-top:10px}
+.copy{border-top:1px solid #ffffff1f;margin-top:28px;padding-top:18px;font-size:12.5px;color:#aebfd2}
+
+/* WhatsApp flottant */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:40;background:var(--green);color:#fff;border-radius:50px;padding:14px 20px;font-weight:700;font-size:14px;box-shadow:0 10px 28px rgba(0,0,0,.25)}
+
+@media(max-width:960px){
+.guide-grid{grid-template-columns:repeat(2,1fr)}
+.services{grid-template-columns:repeat(2,1fr)}
+.stats-row{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:850px){
+.menu-btn{display:block}
+.nav>.btn{display:none}
+.links{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 4%;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+.links.open{display:flex}
+.links a{padding:14px 0;border-bottom:1px solid var(--line)}
+.hero-grid,.promise-grid,.footer-row{grid-template-columns:1fr}
+.cta-box{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:560px){
+section{padding:58px 0}
+.hero{padding:36px 0 48px}
+.services,.guide-grid,.steps,.promise-list{grid-template-columns:1fr}
+.photo-note{position:static;max-width:none;border-radius:0;box-shadow:none}
+.hero-photo{aspect-ratio:auto}
+.hero-photo img{height:240px}
+.wa-float{padding:13px 16px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
 </head>
 <body>
-  <div class="bandeau"><div class="conteneur"><span>Horizon Visa Assistance — vos démarches, mieux préparées</span><span>Service privé indépendant · Sénégal</span></div></div>
-  <header>
-    <nav class="conteneur" aria-label="Navigation principale">
-      <a class="marque" href="#accueil"><span class="logo">HAV</span><span>HORIZON VISA<small>ASSISTANCE</small></span></a>
-      <div class="liens">
-        <a href="#services">Services</a><a href="#boutique">Boutique</a><a href="#paiement">Paiement</a><a href="#faq">Questions</a>
-        <a class="bouton" href="https://wa.me/221711404530?text=Bonjour%20Horizon%20Visa%20Assistance%2C%20je%20souhaite%20des%20informations.">Nous contacter</a>
-      </div>
-    </nav>
-  </header>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header><div class="wrap nav">
+<a class="brand" href="#accueil"><span class="logo" aria-hidden="true">H</span><span>HORIZON VISA<small>ASSISTANCE</small></span></a>
+<nav class="links" id="menu" aria-label="Navigation principale"><a href="#accueil">Accueil</a><a href="#services">Services</a><a href="#guides">Guides PDF</a><a href="#fonctionnement">Comment ça marche</a><a href="#faq">FAQ</a></nav>
+<a class="btn btn-green" href="https://wa.me/221711404530" target="_blank" rel="noopener">WhatsApp</a>
+<button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">☰</button>
+</div></header>
 
-  <main>
-    <section class="hero" id="accueil">
-      <div class="conteneur hero-grille">
-        <div>
-          <div class="surtitre">Un accompagnement clair, depuis le Sénégal</div>
-          <h1>Votre projet à l'étranger mérite une <span>bonne préparation.</span></h1>
-          <p>Horizon Visa Assistance vous aide à comprendre les démarches, organiser vos documents et identifier les sources officielles utiles pour votre projet de voyage ou de travail à l'étranger.</p>
-          <div class="actions">
-            <a class="bouton" href="https://wa.me/221711404530?text=Bonjour%20HAV%2C%20je%20souhaite%20pr%C3%A9senter%20mon%20projet.">Présenter mon projet sur WhatsApp</a>
-            <a class="bouton bouton-secondaire" href="#boutique">Découvrir les guides PDF</a>
-          </div>
-          <div class="preuves"><span>Informations claires</span><span>Tarifs annoncés à l'avance</span><span>Aucune promesse irréaliste</span></div>
-        </div>
-        <aside class="carte-hero">
-          <div class="illustration" aria-hidden="true">🌍 🛂 ✈️</div>
-          <h2>Avancez avec méthode et transparence.</h2>
-          <p>Un premier échange permet de clarifier votre besoin et de vous orienter vers les prochaines étapes.</p>
-          <div class="ligne-hero"><span class="numero">01</span><div><strong>Comprendre la procédure</strong><br><small>Conditions et sources officielles</small></div></div>
-          <div class="ligne-hero"><span class="numero">02</span><div><strong>Organiser les documents</strong><br><small>Liste de contrôle adaptée</small></div></div>
-          <div class="ligne-hero"><span class="numero">03</span><div><strong>Préparer la suite</strong><br><small>Rendez-vous et démarches</small></div></div>
-        </aside>
-      </div>
-    </section>
+<main id="contenu">
+<section class="hero" id="accueil"><div class="wrap hero-grid">
+<div>
+<span class="eyebrow">Votre projet mérite un cap clair</span>
+<h1>Préparez votre départ avec plus de clarté.</h1>
+<p>Horizon Visa Assistance vous aide à comprendre les démarches, préparer votre dossier et trouver des informations fiables pour vos projets à l’international.</p>
+<div class="hero-actions">
+<a class="btn btn-green" href="https://wa.me/221711404530?text=Bonjour%20Horizon%20Visa%20Assistance%2C%20je%20souhaite%20des%20informations." target="_blank" rel="noopener">Parler à un conseiller sur WhatsApp</a>
+<a class="btn btn-light" href="#services">Découvrir nos services</a>
+</div>
+<div class="trust"><span>Accompagnement personnalisé</span><span>Tarifs annoncés avant paiement</span><span>Sources officielles</span></div>
+</div>
+<div class="hero-photo">
+<img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80" alt="Voyageur marchant dans un aéroport" width="1200" height="1000" fetchpriority="high" onerror="this.remove()">
+<div class="photo-note">Votre projet à l’international<small>Un accompagnement clair, étape par étape</small></div>
+</div>
+</div></section>
 
-    <section class="bande-demarrage">
-      <div class="conteneur"><div class="demarrage">
-        <div><h2>Vous ne savez pas par où commencer ?</h2><p>Indiquez le pays visé, le type de démarche et votre situation générale. Nous vous répondrons sur WhatsApp.</p></div>
-        <a class="bouton" href="https://wa.me/221711404530?text=Bonjour%20HAV.%20Pays%20vis%C3%A9%20%3A%20...%20Type%20de%20d%C3%A9marche%20%3A%20...%20Ma%20situation%20%3A%20...">Commencer</a>
-      </div></div>
-    </section>
+<div class="stats"><div class="wrap stats-row">
+<div><strong>8</strong><span>guides par destination</span></div>
+<div><strong>2 000 FCFA</strong><span>par guide PDF</span></div>
+<div><strong>Wave</strong><span>paiement vérifié avant envoi</span></div>
+<div><strong>WhatsApp</strong><span>échange direct avec un conseiller</span></div>
+</div></div>
 
-    <section class="fond-clair" id="services">
-      <div class="conteneur">
-        <div class="section-titre"><small>Nos services</small><h2>Un accompagnement adapté à votre besoin</h2><p>Nous clarifions votre demande, présentons les limites de notre intervention et annonçons le tarif avant toute prestation payante.</p></div>
-        <div class="grille-services">
-          <article class="service"><div class="icone">🛂</div><h3>Orientation sur les visas</h3><p>Comprendre les étapes, les conditions à vérifier et les sources officielles selon votre destination.</p><a class="lien-texte" href="https://wa.me/221711404530?text=Bonjour%2C%20je%20souhaite%20une%20orientation%20sur%20les%20visas.">Demander des informations →</a></article>
-          <article class="service"><div class="icone">📋</div><h3>Préparation de dossier</h3><p>Organiser les pièces, repérer les documents manquants et préparer une liste de contrôle.</p><a class="lien-texte" href="https://wa.me/221711404530?text=Bonjour%2C%20je%20souhaite%20de%20l'aide%20pour%20pr%C3%A9parer%20un%20dossier.">Préparer mon dossier →</a></article>
-          <article class="service"><div class="icone">📅</div><h3>Assistance rendez-vous</h3><p>Retrouver le canal officiel de rendez-vous et comprendre les étapes disponibles.</p><a class="lien-texte" href="https://wa.me/221711404530?text=Bonjour%2C%20j'ai%20besoin%20d'aide%20pour%20un%20rendez-vous.">Parler de mon rendez-vous →</a></article>
-          <article class="service"><div class="icone">📘</div><h3>Guides pratiques PDF</h3><p>Des supports pédagogiques, des explications et des listes de contrôle pour avancer à votre rythme.</p><a class="lien-texte" href="#boutique">Voir la boutique →</a></article>
-          <article class="service"><div class="icone">✈️</div><h3>Visa touristique</h3><p>Repères pour préparer une demande et vérifier les justificatifs attendus.</p><a class="lien-texte" href="https://wa.me/221711404530?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20un%20visa%20touristique.">Décrire mon projet →</a></article>
-          <article class="service"><div class="icone">💼</div><h3>Projet de travail à l'étranger</h3><p>Comprendre les voies possibles, le rôle de l'employeur et les risques de fausses offres.</p><a class="lien-texte" href="https://wa.me/221711404530?text=Bonjour%2C%20je%20souhaite%20m'informer%20sur%20un%20projet%20de%20travail%20%C3%A0%20l'%C3%A9tranger.">Étudier mon projet →</a></article>
-        </div>
-      </div>
-    </section>
+<section id="services"><div class="wrap">
+<div class="section-head"><span class="eyebrow">Nos domaines d’accompagnement</span><h2>Des services pour avancer sereinement</h2><p>Un appui pratique pour mieux comprendre vos démarches et préparer vos prochaines étapes.</p></div>
+<div class="services">
+<article class="service"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=700&q=80" alt="Passeport et documents de voyage" width="700" height="320" onerror="this.remove()"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg></span></div><div class="service-body"><h3>Assistance visa</h3><p>Orientation sur les procédures et les pièces généralement demandées selon votre destination.</p></div></article>
+<article class="service"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=700&q=80" alt="Agenda et planification de rendez-vous" width="700" height="320" onerror="this.remove()"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17M8 14h3"/></svg></span></div><div class="service-body"><h3>Rendez-vous</h3><p>Conseils pour repérer les plateformes officielles et comprendre les étapes de prise de rendez-vous.</p></div></article>
+<article class="service"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=700&q=80" alt="Documents administratifs et signature" width="700" height="320" onerror="this.remove()"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M8 13l2.5 2.5L16 10"/></svg></span></div><div class="service-body"><h3>Préparation de dossier</h3><p>Aide à l’organisation des documents et vérification de cohérence avant dépôt.</p></div></article>
+<article class="service"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=700&q=80" alt="Carte du monde et voyage" width="700" height="320" onerror="this.remove()"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span></div><div class="service-body"><h3>Mobilité professionnelle</h3><p>Informations pour rechercher des opportunités et comprendre les démarches de travail à l’étranger.</p></div></article>
+<article class="service"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=700&q=80" alt="Livres et ressources pédagogiques" width="700" height="320" onerror="this.remove()"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M8 8h7M8 12h5"/></svg></span></div><div class="service-body"><h3>Guides pratiques PDF</h3><p>Des ressources pédagogiques pour comprendre les procédures à votre rythme.</p></div></article>
+<article class="service"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=700&q=80" alt="Poignée de main lors d’un échange conseil" width="700" height="320" onerror="this.remove()"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></span></div><div class="service-body"><h3>Conseils personnalisés</h3><p>Un échange pour clarifier votre situation et identifier les prochaines démarches utiles.</p></div></article>
+</div></div></section>
 
-    <section id="fonctionnement">
-      <div class="conteneur fonctionnement">
-        <div class="panneau"><div class="surtitre" style="color:#9bdcff">Simple et transparent</div><h2>Vous gardez le contrôle de vos démarches.</h2><p>Notre rôle est de vous informer et de vous aider à vous organiser. Les décisions restent entre les mains des autorités compétentes.</p><a class="bouton" href="https://wa.me/221711404530?text=Bonjour%2C%20je%20souhaite%20d%C3%A9crire%20mon%20projet%20%C3%A0%20HAV.">Présenter mon projet</a></div>
-        <div class="etapes">
-          <div class="etape"><div class="etape-n">1</div><div><h3>Expliquez votre objectif</h3><p>Indiquez le pays, le type de démarche et votre situation générale.</p></div></div>
-          <div class="etape"><div class="etape-n">2</div><div><h3>Recevez les informations utiles</h3><p>Nous précisons le service, ses limites et son tarif avant tout paiement.</p></div></div>
-          <div class="etape"><div class="etape-n">3</div><div><h3>Préparez votre dossier</h3><p>Avancez avec une liste de contrôle et des consignes claires.</p></div></div>
-          <div class="etape"><div class="etape-n">4</div><div><h3>Vérifiez avant le dépôt</h3><p>Vous restez responsable de l'exactitude des informations et du dépôt officiel.</p></div></div>
-        </div>
-      </div>
-    </section>
+<section class="guides" id="guides"><div class="wrap">
+<div class="section-head"><span class="eyebrow">La boutique HAV</span><h2>Nos guides pratiques PDF</h2><p>Des supports simples pour mieux comprendre les démarches liées à votre projet.</p></div>
+<div class="guide-grid">
+<article class="guide"><div class="guide-img"><img loading="lazy" src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=700&q=80" alt="Côte italienne" width="700" height="450" onerror="this.remove()"><span class="flag">🇮🇹 Italie</span></div><div class="guide-body"><h3>Decreto Flussi – Italie</h3><p>Comprendre le dispositif et le rôle de l’employeur.</p><div class="guide-foot"><span class="price">2 000 FCFA</span><span class="status">À confirmer</span></div></div></article>
+<article class="guide"><div class="guide-img"><img loading="lazy" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=700&q=80" alt="Skyline de Dubaï" width="700" height="450" onerror="this.remove()"><span class="flag">🇦🇪 Dubaï</span></div><div class="guide-body"><h3>Visa et séjour – Dubaï</h3><p>Repères pratiques pour préparer votre démarche.</p><div class="guide-foot"><span class="price">2 000 FCFA</span><span class="status">En préparation</span></div></div></article>
+<article class="guide"><div class="guide-img"><img loading="lazy" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=700&q=80" alt="Paysage canadien" width="700" height="450" onerror="this.remove()"><span class="flag">🇨🇦 Canada</span></div><div class="guide-body"><h3>Travail au Canada</h3><p>Premiers repères pour comprendre les voies d’accès.</p><div class="guide-foot"><span class="price">2 000 FCFA</span><span class="status">En préparation</span></div></div></article>
+<article class="guide"><div class="guide-img"><img loading="lazy" src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=700&q=80" alt="Ville d’Europe de l’Est" width="700" height="450" onerror="this.remove()"><span class="flag">🇷🇴 Roumanie</span></div><div class="guide-body"><h3>Travail en Roumanie</h3><p>Comprendre les grandes étapes du parcours.</p><div class="guide-foot"><span class="price">2 000 FCFA</span><span class="status">En préparation</span></div></div></article>
+<article class="guide"><div class="guide-img"><img loading="lazy" src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=700&q=80" alt="Ville allemande" width="700" height="450" onerror="this.remove()"><span class="flag">🇩🇪 Allemagne</span></div><div class="guide-body"><h3>Visa de travail – Allemagne</h3><p>Informations générales sur la préparation du projet.</p><div class="guide-foot"><span class="price">2 000 FCFA</span><span class="status">En préparation</span></div></div></article>
+<article class="guide"><div class="guide-img"><img loading="lazy" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80" alt="Paysage d’Europe" width="700" height="450" onerror="this.remove()"><span class="flag">🇱🇺 Luxembourg</span></div><div class="guide-body"><h3>Travail au Luxembourg</h3><p>Repères pour la recherche d’emploi et les démarches.</p><div class="guide-foot"><span class="price">2 000 FCFA</span><span class="status">En préparation</span></div></div></article>
+<article class="guide"><div class="guide-img"><img loading="lazy" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=700&q=80" alt="Paysage d’Europe du Nord" width="700" height="450" onerror="this.remove()"><span class="flag">🇱🇹 Lituanie</span></div><div class="guide-body"><h3>Travail en Lituanie</h3><p>Comprendre les étapes et les documents à prévoir.</p><div class="guide-foot"><span class="price">2 000 FCFA</span><span class="status">En préparation</span></div></div></article>
+<article class="guide"><div class="guide-img"><img loading="lazy" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80" alt="Plage tropicale" width="700" height="450" onerror="this.remove()"><span class="flag">🌐 Tourisme</span></div><div class="guide-body"><h3>Visa touristique</h3><p>Organiser son dossier et anticiper les justificatifs.</p><div class="guide-foot"><span class="price">2 000 FCFA</span><span class="status">En préparation</span></div></div></article>
+</div>
+<div class="guide-warning"><strong>Important :</strong> certains guides sont encore en préparation. Contactez-nous pour confirmer qu’un PDF est finalisé et disponible avant tout paiement. Aucun paiement ne doit être effectué pour un guide non prêt.</div>
+<div style="text-align:center;margin-top:26px"><a class="btn btn-blue" href="https://wa.me/221711404530?text=Bonjour%2C%20je%20souhaite%20conna%C3%AEtre%20les%20guides%20PDF%20disponibles." target="_blank" rel="noopener">Demander les guides disponibles</a></div>
+</div></section>
 
-    <section class="fond-clair" id="boutique">
-      <div class="conteneur">
-        <div class="section-titre"><small>La boutique HAV</small><h2>Nos guides pratiques PDF</h2><p>Chaque guide est proposé au prix unique de 2 000 FCFA. Contactez-nous pour confirmer sa disponibilité réelle et les modalités de livraison avant tout paiement.</p></div>
-        <div class="grille-guides">
-          <article class="guide"><div class="guide-entete"><span class="guide-icone">🇮🇹</span><span class="etat">Disponible</span></div><h3>Comprendre le Decreto Flussi en Italie</h3><p>Comprendre le dispositif, le rôle de l'employeur, les étapes et les précautions contre les fausses promesses.</p><div class="prix">2 000 FCFA</div><a class="bouton" href="https://wa.me/221711404530?text=Bonjour%20HAV%2C%20je%20souhaite%20commander%20le%20guide%20Decreto%20Flussi%20Italie.%20Merci%20de%20me%20confirmer%20sa%20disponibilit%C3%A9%20et%20les%20modalit%C3%A9s%20avant%20paiement.">Demander le guide</a></article>
-          <article class="guide"><div class="guide-entete"><span class="guide-icone">🌍</span><span class="etat">Disponible</span></div><h3>Trouver un emploi à l'étranger depuis le Sénégal</h3><p>Guide en cours de préparation. Contactez HAV pour connaître l'état réel de disponibilité avant toute commande.</p><div class="prix">2 000 FCFA</div><a class="bouton" href="https://wa.me/221711404530?text=Bonjour%20HAV%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20guide%20Trouver%20un%20emploi%20%C3%A0%20l'%C3%A9tranger.%20Merci%20de%20confirmer%20sa%20disponibilit%C3%A9%20avant%20paiement.">Demander le guide</a></article>
-          <article class="guide"><div class="guide-entete"><span class="guide-icone">🇩🇪</span><span class="etat">Disponible</span></div><h3>Comprendre le visa de travail en Allemagne</h3><p>Guide en cours de préparation. Contactez HAV pour connaître l'état réel de disponibilité avant toute commande.</p><div class="prix">2 000 FCFA</div><a class="bouton" href="https://wa.me/221711404530?text=Bonjour%20HAV%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20guide%20Visa%20de%20travail%20en%20Allemagne.%20Merci%20de%20confirmer%20sa%20disponibilit%C3%A9%20avant%20paiement.">Demander le guide</a></article>
-          <article class="guide"><div class="guide-entete"><span class="guide-icone">🇱🇺</span><span class="etat">Disponible</span></div><h3>Comprendre le travail au Luxembourg</h3><p>Guide en cours de préparation. Contactez HAV pour connaître l'état réel de disponibilité avant toute commande.</p><div class="prix">2 000 FCFA</div><a class="bouton" href="https://wa.me/221711404530?text=Bonjour%20HAV%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20guide%20Travail%20au%20Luxembourg.%20Merci%20de%20confirmer%20sa%20disponibilit%C3%A9%20avant%20paiement.">Demander le guide</a></article>
-          <article class="guide"><div class="guide-entete"><span class="guide-icone">🇨🇦</span><span class="etat">Disponible</span></div><h3>Comprendre les possibilités de travail au Canada</h3><p>Guide en cours de préparation. Contactez HAV pour connaître l'état réel de disponibilité avant toute commande.</p><div class="prix">2 000 FCFA</div><a class="bouton" href="https://wa.me/221711404530?text=Bonjour%20HAV%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20guide%20Travail%20au%20Canada.%20Merci%20de%20confirmer%20sa%20disponibilit%C3%A9%20avant%20paiement.">Demander le guide</a></article>
-          <article class="guide"><div class="guide-entete"><span class="guide-icone">🧳</span><span class="etat">Disponible</span></div><h3>Préparer un dossier de visa touristique</h3><p>Guide en cours de préparation. Contactez HAV pour connaître l'état réel de disponibilité avant toute commande.</p><div class="prix">2 000 FCFA</div><a class="bouton" href="https://wa.me/221711404530?text=Bonjour%20HAV%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20guide%20Visa%20touristique.%20Merci%20de%20confirmer%20sa%20disponibilit%C3%A9%20avant%20paiement.">Demander le guide</a></article>
-          <article class="guide"><div class="guide-entete"><span class="guide-icone">🇷🇴</span><span class="etat">Disponible</span></div><h3>Comprendre le visa de travail en Roumanie</h3><p>Guide en cours de préparation. Contactez HAV pour connaître l'état réel de disponibilité avant toute commande.</p><div class="prix">2 000 FCFA</div><a class="bouton" href="https://wa.me/221711404530?text=Bonjour%20HAV%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20guide%20Visa%20de%20travail%20en%20Roumanie.%20Merci%20de%20confirmer%20sa%20disponibilit%C3%A9%20avant%20paiement.">Demander le guide</a></article>
-          <article class="guide"><div class="guide-entete"><span class="guide-icone">🇱🇹</span><span class="etat">Disponible</span></div><h3>Comprendre le visa de travail en Lituanie</h3><p>Guide en cours de préparation. Contactez HAV pour connaître l'état réel de disponibilité avant toute commande.</p><div class="prix">2 000 FCFA</div><a class="bouton" href="https://wa.me/221711404530?text=Bonjour%20HAV%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20guide%20Visa%20de%20travail%20en%20Lituanie.%20Merci%20de%20confirmer%20sa%20disponibilit%C3%A9%20avant%20paiement.">Demander le guide</a></article>
-        </div>
-        <p class="note-guide">Les fiches de présentation ne remplacent pas les guides PDF. Aucun paiement ne doit être effectué avant confirmation que le document demandé est prêt à être livré.</p>
-      </div>
-    </section>
+<section id="fonctionnement"><div class="wrap">
+<div class="section-head"><span class="eyebrow">Simple et transparent</span><h2>Comment ça marche ?</h2><p>Un parcours clair, sans promesse irréaliste.</p></div>
+<div class="steps">
+<div class="step"><div class="step-num">1</div><h3>Vous nous contactez</h3><p>Expliquez votre projet et posez vos questions sur WhatsApp.</p></div>
+<div class="step"><div class="step-num">2</div><h3>Nous confirmons</h3><p>Nous précisons le service, le contenu disponible et le tarif avant tout paiement.</p></div>
+<div class="step"><div class="step-num">3</div><h3>Vous recevez votre guide</h3><p>Après vérification effective du paiement Wave, le PDF prêt est envoyé par WhatsApp.</p></div>
+</div></div></section>
 
-    <section id="paiement">
-      <div class="conteneur">
-        <div class="section-titre"><small>Commande et paiement</small><h2>Un processus simple et vérifié</h2><p>Les commandes sont traitées manuellement afin de confirmer le document demandé et le paiement avant la livraison.</p></div>
-        <div class="paiement-grille">
-          <article class="paiement-etape"><div class="icone">💬</div><h3>1. Contactez HAV</h3><p>Envoyez le titre du guide souhaité sur WhatsApp. Nous confirmons si le PDF est effectivement prêt.</p></article>
-          <article class="paiement-etape"><div class="icone">📲</div><h3>2. Payez par Wave</h3><p>Si le guide est prêt, nous vous communiquons les instructions de paiement et le montant à régler.</p></article>
-          <article class="paiement-etape"><div class="icone">📩</div><h3>3. Recevez votre PDF</h3><p>Après vérification effective du paiement, le guide est envoyé sur WhatsApp.</p></article>
-        </div>
-        <div class="avertissement"><strong>Important :</strong> ne payez jamais pour un guide avant d'avoir reçu confirmation qu'il est terminé et disponible à la livraison. Une capture d'écran seule ne constitue pas une confirmation de paiement.</div>
-      </div>
-    </section>
+<section class="promise"><div class="wrap promise-grid">
+<div><span class="eyebrow">Notre engagement</span><h2>De l’information claire. Pas de fausses promesses.</h2><p>Horizon Visa Assistance est un service privé et indépendant d’accompagnement. Nous ne délivrons pas de visas, ne sommes pas une ambassade et ne garantissons ni visa, ni emploi, ni rendez-vous.</p><a class="btn btn-green" href="https://wa.me/221711404530" target="_blank" rel="noopener">Échanger avec HAV</a></div>
+<div class="promise-list">
+<div class="promise-item"><strong>Transparence</strong><span>Les limites et les frais sont expliqués à l’avance.</span></div>
+<div class="promise-item"><strong>Accompagnement</strong><span>Des explications adaptées à votre démarche.</span></div>
+<div class="promise-item"><strong>Prudence</strong><span>Priorité aux sources et plateformes officielles.</span></div>
+<div class="promise-item"><strong>Respect</strong><span>Aucune garantie de résultat irréaliste.</span></div>
+</div></div></section>
 
-    <section class="fond-clair" id="engagements">
-      <div class="conteneur">
-        <div class="section-titre"><small>Nos engagements</small><h2>La confiance commence par la transparence</h2><p>Votre projet est important. Notre communication doit rester claire, réaliste et responsable.</p></div>
-        <div class="engagements">
-          <article class="engagement"><h3>Pas de visa garanti</h3><p>Seules les autorités compétentes décident de l'octroi ou du refus d'un visa.</p></article>
-          <article class="engagement"><h3>Pas de faux recrutement</h3><p>HAV n'est ni un employeur, ni une ambassade, ni un service d'immigration officiel.</p></article>
-          <article class="engagement"><h3>Tarifs annoncés à l'avance</h3><p>Le contenu, le prix et les limites du service doivent être compris avant tout paiement.</p></article>
-        </div>
-      </div>
-    </section>
+<section id="faq"><div class="wrap">
+<div class="section-head"><span class="eyebrow">Questions fréquentes</span><h2>Vous souhaitez en savoir plus ?</h2></div>
+<div class="faq">
+<details><summary>Horizon Visa Assistance délivre-t-elle des visas ?</summary><p>Non. HAV est un service privé d’information et d’accompagnement. Seules les autorités compétentes décident de l’octroi d’un visa.</p></details>
+<details><summary>Le paiement se fait-il automatiquement sur le site ?</summary><p>Non. La commande et les instructions de paiement sont confirmées manuellement sur WhatsApp. Le paiement est vérifié avant l’envoi du guide.</p></details>
+<details><summary>Les guides sont-ils tous disponibles immédiatement ?</summary><p>Non. Certains sont en préparation. Contactez-nous pour confirmer la disponibilité réelle avant tout règlement.</p></details>
+<details><summary>Quel est le prix d’un guide PDF ?</summary><p>Le prix prévu est de 2 000 FCFA par guide disponible. La disponibilité est confirmée avant paiement.</p></details>
+</div></div></section>
 
-    <section id="faq">
-      <div class="conteneur">
-        <div class="section-titre"><small>Questions fréquentes</small><h2>Avant de commencer</h2></div>
-        <div class="faq">
-          <details><summary>Horizon Visa Assistance délivre-t-elle des visas ?</summary><p>Non. HAV est un service privé d'information et d'assistance à la préparation. Seules les autorités compétentes décident de l'octroi ou du refus d'un visa.</p></details>
-          <details><summary>Pouvez-vous garantir un emploi ou un visa ?</summary><p>Non. Nous ne garantissons ni emploi, ni autorisation de travail, ni rendez-vous, ni délivrance de visa.</p></details>
-          <details><summary>Comment commander un guide PDF ?</summary><p>Contactez-nous sur WhatsApp. Nous confirmerons que le guide est prêt, son prix, le moyen de paiement et les modalités de livraison avant toute transaction.</p></details>
-          <details><summary>Comment le paiement est-il vérifié ?</summary><p>La commande est vérifiée manuellement. La livraison intervient après confirmation effective de la réception du paiement.</p></details>
-          <details><summary>Les démarches et les frais sont-ils toujours les mêmes ?</summary><p>Non. Les exigences, les frais et les disponibilités peuvent évoluer selon le pays, le type de visa et la date. Consultez toujours les sources officielles.</p></details>
-        </div>
-      </div>
-    </section>
+<section class="cta"><div class="wrap cta-box">
+<div><h2>Parlons de votre projet.</h2><p>Un premier échange pour mieux comprendre vos prochaines étapes.</p></div>
+<a class="btn btn-green" href="https://wa.me/221711404530?text=Bonjour%20HAV%2C%20je%20souhaite%20%C3%A9changer%20sur%20mon%20projet." target="_blank" rel="noopener">Contacter sur WhatsApp</a>
+</div></section>
+</main>
 
-    <section class="appel" id="contact">
-      <div class="conteneur appel-interieur"><div><h2>Parlons de votre projet.</h2><p>Expliquez-nous votre besoin et recevez les premières informations sur les prochaines étapes.</p></div><a class="bouton" href="https://wa.me/221711404530?text=Bonjour%20Horizon%20Visa%20Assistance%2C%20voici%20mon%20projet%20%3A">Contacter HAV sur WhatsApp</a></div>
-    </section>
-  </main>
+<footer><div class="wrap">
+<div class="footer-row">
+<div><div class="footer-brand">HORIZON VISA ASSISTANCE</div><div class="footer-small">Accompagnement privé et indépendant depuis le Sénégal. Votre projet à l’international.</div></div>
+<div><h4>Navigation</h4><ul><li><a href="#services">Services</a></li><li><a href="#guides">Guides PDF</a></li><li><a href="#fonctionnement">Comment ça marche</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+<div><h4>Contact</h4><ul><li><a href="https://wa.me/221711404530" target="_blank" rel="noopener">WhatsApp : +221 71 140 45 30</a></li><li><a href="mailto:contact@horizonvisaassistance.casa">contact@horizonvisaassistance.casa</a></li></ul></div>
+</div>
+<div class="copy">© <span id="year"></span> Horizon Visa Assistance. Tous droits réservés. Service privé, non affilié à une ambassade ou à une administration.</div>
+</div></footer>
 
-  <footer>
-    <div class="conteneur">
-      <div class="pied-grille">
-        <div><a class="marque" href="#accueil" style="color:white"><span class="logo" style="background:white;color:#123c63">HAV</span><span>HORIZON VISA<small style="color:#c2d7e6">ASSISTANCE</small></span></a><p>Des informations claires pour mieux comprendre vos démarches et préparer votre projet à l'étranger.</p></div>
-        <div><h3>Navigation</h3><div class="pied-liens"><a href="#services">Nos services</a><a href="#boutique">Boutique de guides</a><a href="#paiement">Commande et paiement</a><a href="#faq">Questions fréquentes</a></div></div>
-        <div><h3>Contact</h3><div class="pied-liens"><a href="https://wa.me/221711404530">WhatsApp : +221 71 140 45 30</a><a href="mailto:contact@horizonvisaassistance.casa">contact@horizonvisaassistance.casa</a></div></div>
-      </div>
-      <div class="bas-pied">© <span id="annee"></span> Horizon Visa Assistance. Service privé indépendant, non affilié aux ambassades ou autorités d'immigration. Les informations présentées ne constituent pas une garantie de résultat.</div>
-    </div>
-  </footer>
-  <a class="whatsapp-fixe" href="https://wa.me/221711404530?text=Bonjour%20Horizon%20Visa%20Assistance." aria-label="Contacter HAV sur WhatsApp">WhatsApp</a>
-  <script>document.getElementById("annee").textContent=new Date().getFullYear();</script>
+<a class="wa-float" href="https://wa.me/221711404530" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp">💬 WhatsApp</a>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+var b=document.getElementById('menuBtn'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'✕':'☰'});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='☰'}});
+</script>
 </body>
 </html>
